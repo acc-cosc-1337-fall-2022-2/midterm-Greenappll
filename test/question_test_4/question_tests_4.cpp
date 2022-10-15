@@ -10,3 +10,18 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("10")
+{
+	REQUIRE(decimal_to_hex(10) == "A");
+}
+
+TEST_CASE("170")
+{
+	REQUIRE(decimal_to_hex(170) == "AA");
+}
+
+TEST_CASE("255")
+{
+	REQUIRE(decimal_to_hex(255) == "FF");
+}
